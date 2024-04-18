@@ -6,14 +6,19 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header">Register</div> 
+                <div class="card-header">Register Agence</div> 
 
                 <div class="card-body">
-                    <form action="{{ route('registerClient.submit') }}" method="post">
+                    <form action="{{ route('registerAgence.submit') }}" method="post">
                         @csrf
                         <div class="form-group">
                             <label for="nom">Nom</label>
-                            <input type="text" class="form-control" id="nom" name="nom" placeholder="Enter your name">
+                            <input type="text" class="form-control"  name="nom" placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nom">Adress</label>
+                            <input type="text" class="form-control" id="nom" name="adress" placeholder="Enter your adress">
                         </div>
 
                         <div class="form-group">

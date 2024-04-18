@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/register', 'App\Http\Controllers\RegistrationController@showRegistrationForm')->name('register');
-Route::post('/register', 'App\Http\Controllers\RegistrationController@register')->name('register.submit');
+Route::get('/registerClient', 'App\Http\Controllers\RegistrationControllerClient@showRegistrationForm')->name('registerClient');
+Route::post('/registerClient', 'App\Http\Controllers\RegistrationControllerClient@register')->name('registerClient.submit');
 
+Route::get('/registerAgence', 'App\Http\Controllers\RegistrationControllerAgence@showRegistrationForm')->name('registerAgence');
+Route::post('/registerAgence', 'App\Http\Controllers\RegistrationControllerAgence@register')->name('registerAgence.submit');
