@@ -22,3 +22,13 @@ Route::post('/registerClient', 'App\Http\Controllers\RegistrationControllerClien
 
 Route::get('/registerAgence', 'App\Http\Controllers\RegistrationControllerAgence@showRegistrationForm')->name('registerAgence');
 Route::post('/registerAgence', 'App\Http\Controllers\RegistrationControllerAgence@register')->name('registerAgence.submit');
+
+
+Route::get('/loginClient', 'App\Http\Controllers\LoginControllerClient@showLoginForm')->name('loginClient');
+Route::post('/loginClient', 'App\Http\Controllers\LoginControllerClient@Login')->name('loginClient.submit');
+
+Route::get('/loginAgence', 'App\Http\Controllers\LoginControllerAgence@showLoginForm')->name('LoginAgence');
+Route::post('/loginAgence', 'App\Http\Controllers\LoginControllerAgence@Login')->name('LoginAgence.submit');
+
+
+
