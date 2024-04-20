@@ -17,18 +17,18 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/registerClient', 'App\Http\Controllers\RegistrationControllerClient@showRegistrationForm')->name('registerClient');
-Route::post('/registerClient', 'App\Http\Controllers\RegistrationControllerClient@register')->name('registerClient.submit');
+Route::get('/registerClient', 'App\Http\Controllers\auth\RegistrationControllerClient@showRegistrationForm')->name('registerClient');
+Route::post('/registerClient', 'App\Http\Controllers\auth\RegistrationControllerClient@register')->name('registerClient.submit');
 
-Route::get('/registerAgence', 'App\Http\Controllers\RegistrationControllerAgence@showRegistrationForm')->name('registerAgence');
-Route::post('/registerAgence', 'App\Http\Controllers\RegistrationControllerAgence@register')->name('registerAgence.submit');
+Route::get('/registerAgence', 'App\Http\Controllers\auth\RegistrationControllerAgence@showRegistrationForm')->name('registerAgence');
+Route::post('/registerAgence', 'App\Http\Controllers\auth\RegistrationControllerAgence@register')->name('registerAgence.submit');
 
 
-Route::get('/loginClient', 'App\Http\Controllers\LoginControllerClient@showLoginForm')->name('loginClient');
-Route::post('/loginClient', 'App\Http\Controllers\LoginControllerClient@Login')->name('loginClient.submit');
+Route::get('/loginClient', 'App\Http\Controllers\auth\LoginControllerClient@showLoginForm')->name('loginClient');
+Route::post('/loginClient', 'App\Http\Controllers\auth\LoginControllerClient@Login')->name('loginClient.submit');
 
-Route::get('/loginAgence', 'App\Http\Controllers\LoginControllerAgence@showLoginForm')->name('LoginAgence');
-Route::post('/loginAgence', 'App\Http\Controllers\LoginControllerAgence@Login')->name('LoginAgence.submit');
+Route::get('/loginAgence', 'App\Http\Controllers\auth\LoginControllerAgence@showLoginForm')->name('loginAgence');
+Route::post('/loginAgence', 'App\Http\Controllers\auth\LoginControllerAgence@Login')->name('LoginAgence.submit');
 
 
 

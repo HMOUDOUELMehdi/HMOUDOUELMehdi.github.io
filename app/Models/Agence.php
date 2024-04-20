@@ -9,5 +9,5 @@ class Agence extends Authenticatable
 {
     use HasFactory;
 
-    protected $fillable = ['nomAgence', 'address', 'email', 'telephone', 'password'];
+    protected $fillable = ['nomAgence', 'adress', 'email', 'telephone', 'password'];
 }

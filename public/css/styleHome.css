@@ -1,0 +1,44 @@
+.container {
+    margin-top: 50px;
+    background-image: url('/photos/backGroundImage.jpg');
+    background-size: cover; 
+    background-position: center; 
+    padding: 50px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.btn {
+    margin: 87px 0; 
+    padding: 15px 24px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px; 
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    color: black;
+}
+
+h2 , h3 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}

@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header">Register Agence</div> 
+                <div class="card-header">Register Client</div> 
 
                 <div class="card-body">
                     <form action="{{ route('loginClient.submit') }}" method="post">
