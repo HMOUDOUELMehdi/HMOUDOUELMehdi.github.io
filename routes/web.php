@@ -30,5 +30,5 @@ Route::post('/loginClient', 'App\Http\Controllers\auth\LoginControllerClient@Log
 Route::get('/loginAgence', 'App\Http\Controllers\auth\LoginControllerAgence@showLoginForm')->name('loginAgence');
 Route::post('/loginAgence', 'App\Http\Controllers\auth\LoginControllerAgence@Login')->name('LoginAgence.submit');
 
-
+Route::resource('dashboardAgence', 'App\Http\Controllers\DashboardAgenceController');
 

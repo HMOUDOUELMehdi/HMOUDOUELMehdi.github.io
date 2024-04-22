@@ -22,7 +22,7 @@ class LoginControllerAgence extends Controller
         ]);
 
         if (Auth::guard('agence')->attempt($request->only('email', 'password'))) {
-            return redirect()->intended('/'); 
+            return redirect()->intended('/dashboardAgence')->with(dd(Auth::guard('agence')->user()->idagence));
         }
 
         return redirect()->back()->withErrors(['email' => 'Invalid credentials']);
